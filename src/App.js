@@ -1,6 +1,8 @@
 import Header from './componentes/Header'
 import Pesquisa from './componentes/Pesquisa';
+import { UltimosLancamentos } from './componentes/UltimosLancamentos';
 import styled from 'styled-components';
+
 
 const AppContainer = styled.div`
     width: 100vw;
@@ -11,16 +13,16 @@ const AppContainer = styled.div`
   }
 `
 
+// ...
+
 function App() {
   return (
-    <div className='App'>
       <AppContainer>
-      <Header/>
-      <Pesquisa/>
+          <Header />
+          <Pesquisa />
+          <UltimosLancamentos />
       </AppContainer>
-    </div>
-  );
+);
 }
 
-export default App;
-
+export default App
